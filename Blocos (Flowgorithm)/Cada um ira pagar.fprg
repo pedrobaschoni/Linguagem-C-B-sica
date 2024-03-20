@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 11:14:11 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMToxNDoxMSAiOzM7MjUxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total, cent, amg3" type="Real" array="False" size=""/>
+            <declare name="amg1, amg2, valtotal" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o valor total: &quot;" newline="True"/>
+            <input variable="total"/>
+            <assign variable="total" expression="total / 3"/>
+            <assign variable="valtotal" expression="total"/>
+            <assign variable="cent" expression="total - valtotal"/>
+            <assign variable="amg1" expression="total"/>
+            <assign variable="amg2" expression="total"/>
+            <assign variable="amg3" expression="total + cent * 2"/>
+            <output expression="&quot;O primeiro amigo pagar&#225;: &quot; &amp;amg1" newline="True"/>
+            <output expression="&quot;O segundo amigo pagar&#225;: &quot; &amp;amg2" newline="True"/>
+            <output expression="&quot;O terceiro amigo pagar&#225;: &quot; &amp;amg3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

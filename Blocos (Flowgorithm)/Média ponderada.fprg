@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-20 09:01:58 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwODoxMzozMSAiOzI0MDc="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwOTowMTo1OCAiOzU7MjUyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe a nota de laborat&#243;rio: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Informe a nota da prova parcial :&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Informe a nota da prova final: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <assign variable="total" expression="((nota1 *2) + (nota2 *3) + (nota3 *5)) / (2 + 3 + 5)"/>
+            <if expression="total &gt;= 8.01 || total = 10">
+                <then>
+                    <output expression="&quot;M&#233;dia final: &quot; &amp;total" newline="True"/>
+                    <output expression="&quot;Aluno A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="total &gt;= 7.01 || total = 8">
+                        <then>
+                            <output expression="&quot;M&#233;dia final: &quot; &amp;total" newline="True"/>
+                            <output expression="&quot;Aluno B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="total &gt;= 5.01 || total = 7">
+                                <then>
+                                    <output expression="&quot;M&#233;dia final: &quot; &amp;total" newline="True"/>
+                                    <output expression="&quot;Aluno C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="total &gt;= 3.01 || total = 5">
+                                        <then>
+                                            <output expression="&quot;M&#233;dia final: &quot; &amp;total" newline="True"/>
+                                            <output expression="&quot;Aluno D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="total &lt;= 3">
+                                                <then>
+                                                    <output expression="&quot;M&#233;dia final: &quot; &amp;total" newline="True"/>
+                                                    <output expression="&quot;Aluno E&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-20 12:59:35 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA1LTIwOyIxMjoxOTo1OCAiOzI0MTg="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA1LTIwOyIxMjo1OTozNSAiOzE7MjUyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data, idade" type="Integer" array="False" size=""/>
+            <declare name="pro, como" type="String" array="False" size=""/>
+            <output expression="&quot;Informe seu ano de nascimento: &quot;" newline="True"/>
+            <input variable="data"/>
+            <output expression="&quot;Saude Publica(S)&#13;&#10;Agentes de seguran&#231;a(A)&#13;&#10;Professores (P) a partir de 47 anos&#13;&#10;Profissionais transporte p&#250;blico (T)&#13;&#10;Outra Profiss&#227;o (O)&quot;" newline="True"/>
+            <output expression="&quot;Informe sua Profiss&#227;o: &quot;" newline="True"/>
+            <input variable="pro"/>
+            <output expression="&quot;Possui alguma comorbidade?&quot;" newline="True"/>
+            <input variable="como"/>
+            <assign variable="idade" expression="2021 - data"/>
+            <if expression="pro = &quot;S&quot;">
+                <then>
+                    <output expression="&quot;Periodo de vacina&#231;&#227;o 17/01 a 07/02&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade &gt;= 80 &amp;&amp; idade &lt;= 90">
+                        <then>
+                            <output expression="&quot;Periodo de vacina&#231;&#227;o 07/02 a 02/03&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade &gt;= 68 &amp;&amp; idade &lt;= 79">
+                                <then>
+                                    <output expression="&quot;Periodo de vacina&#231;&#227;o 03/03 a 04/04&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(pro = &quot;A&quot;) || (pro = &quot;P&quot; &amp;&amp; idade &gt;= 47) || (idade &gt;= 60 &amp;&amp; idade &lt;= 67)">
+                                        <then>
+                                            <output expression="&quot;Periodo de vacina&#231;&#227;o 05/04 a 09/05&#13;&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(como = &quot;sim&quot; &amp;&amp; idade &gt; 45) || (pro = &quot;T&quot;)">
+                                                <then>
+                                                    <output expression="&quot;Periodo de vacina&#231;&#227;o 10/05 a 02/06&#13;&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Periodo de vacina&#231;&#227;o a partir de 03/06&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

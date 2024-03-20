@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-20 08:28:55 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwODoxMzozMSAiOzI0MDc="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwODoyODo1NSAiOzI7MjUyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe sau primeira nota do aluno: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Informe sau segunda nota do aluno: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Informe sau terceira nota do aluno: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <assign variable="total" expression="(nota1 + nota2 + nota3) /3"/>
+            <if expression="total &gt;= 6">
+                <then>
+                    <output expression="&quot;Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

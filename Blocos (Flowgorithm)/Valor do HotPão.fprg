@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 10:14:16 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMDoxNDoxNiAiOzE7MjUxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tp, tb, pao, broa, por, pou, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Quantos p&#227;es foram vendido?&quot;" newline="True"/>
+            <input variable="pao"/>
+            <output expression="&quot;Quantas broas foram vendida?&quot;" newline="True"/>
+            <input variable="broa"/>
+            <assign variable="tp" expression="pao * 0.60"/>
+            <assign variable="tb" expression="broa * 4.5"/>
+            <assign variable="total" expression="tp + tb"/>
+            <output expression="&quot;Valor vendido com os p&#227;es: &quot; &amp;tp" newline="True"/>
+            <output expression="&quot;Valor vendido com as broas: &quot; &amp;tb" newline="True"/>
+            <output expression="&quot;Valor total lucrado neste dia: &quot; &amp;total" newline="True"/>
+            <output expression="&quot;Qual o percentual que deseja guardar em sua poupan&#231;a?&quot;" newline="True"/>
+            <input variable="por"/>
+            <assign variable="pou" expression="total * ( por / 100 )"/>
+            <output expression="&quot;Voc&#234; guardara em sua poupan&#231;a um total de: &quot; &amp;pou" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

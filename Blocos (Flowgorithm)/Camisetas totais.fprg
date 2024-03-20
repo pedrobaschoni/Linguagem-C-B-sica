@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 12:52:26 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMjo1MjoyNiAiOzc7MjUyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cp, cm, cg, tp, tm, tg, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Quantas camisetas pequenas deseja?&quot;" newline="True"/>
+            <input variable="cp"/>
+            <output expression="&quot;Quantas camisetas m&#233;dias deseja?&quot;" newline="True"/>
+            <input variable="cm"/>
+            <output expression="&quot;Quantas camisetas grandes deseja?&quot;" newline="True"/>
+            <input variable="cg"/>
+            <assign variable="tp" expression="cp * 15"/>
+            <assign variable="tm" expression="cm * 22"/>
+            <assign variable="tg" expression="cg * 25"/>
+            <assign variable="total" expression="tp + tm + tg"/>
+            <output expression="&quot;Total a pagar pelas camisetas: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 12:18:37 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMjoxODozNyAiOzU7MjUyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kw, sm, totalp, totalpor, kwtotal" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe os KW: &quot;" newline="True"/>
+            <input variable="kw"/>
+            <output expression="&quot;Qual O salario minimo: &quot;" newline="True"/>
+            <input variable="sm"/>
+            <assign variable="kw" expression="kw / 100"/>
+            <assign variable="sm" expression="sm / 7"/>
+            <assign variable="kwtotal" expression="sm / 100"/>
+            <assign variable="totalp" expression="kw * sm"/>
+            <assign variable="totalpor" expression="totalp * ( 10 / 100 )"/>
+            <assign variable="totalpor" expression="totalp - totalpor"/>
+            <output expression="&quot;Cada KW custa: &quot; &amp;kwtotal" newline="True"/>
+            <output expression="&quot;Valor a ser pago: &quot; &amp;totalp" newline="True"/>
+            <output expression="&quot;Total a ser pago com os 10%: &quot; &amp;totalpor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

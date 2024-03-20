@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-20 07:33:36 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwNzoyMzowNyAiOzI0MTA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwNzozMzozNiAiOzI7MjUyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Informe o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num1 &gt; num2">
+                <then>
+                    <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp;num1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp;num2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

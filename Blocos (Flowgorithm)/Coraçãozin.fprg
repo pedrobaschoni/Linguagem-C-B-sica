@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 01:22:18 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwMToyMjoxOCAiOzEwOzI1NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="anos, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual sua idade?&quot;" newline="True"/>
+            <input variable="anos"/>
+            <assign variable="total" expression="anos * 31557600"/>
+            <output expression="&quot;Seu cora&#231;&#227;o j&#225; bateu: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 12:48:03 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMjo0ODowMyAiOzc7MjUyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sal, vendas, com" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o seu sal&#225;rio?&quot;" newline="True"/>
+            <input variable="sal"/>
+            <output expression="&quot;Qual o valor das vendas?&quot;" newline="True"/>
+            <input variable="vendas"/>
+            <assign variable="vendas" expression="vendas * (4 / 100)"/>
+            <assign variable="com" expression="sal + vendas"/>
+            <output expression="&quot;Sua comiss&#227;o &#233; de: &quot; &amp;vendas" newline="True"/>
+            <output expression="&quot;Seu sal&#225;rio final &#233;: &quot; &amp;com" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

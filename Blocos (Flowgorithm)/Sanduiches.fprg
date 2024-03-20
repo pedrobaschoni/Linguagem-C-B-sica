@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 11:29:33 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMToyOTozMyAiOzQ7MjUyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totals, pre, que, ham" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe a quantidade de sanduiches que deseja: &quot;" newline="True"/>
+            <input variable="totals"/>
+            <assign variable="pre" expression="50 * totals"/>
+            <assign variable="que" expression="100 * totals"/>
+            <assign variable="ham" expression="100 * totals"/>
+            <output expression="&quot;Gramas de presunto gastas: &quot; &amp;pre" newline="True"/>
+            <output expression="&quot;Gramas de queijo gastas: &quot; &amp;que" newline="True"/>
+            <output expression="&quot;Gramas de hamburguer gastas: &quot; &amp;ham" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

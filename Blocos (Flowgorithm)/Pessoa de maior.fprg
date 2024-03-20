@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-20 07:57:15 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwNzoyMzowNyAiOzI0MTA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwNzo1NzoxNSAiOzQ7MjUyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o ano que voc&#234; nasceu: &quot;" newline="True"/>
+            <input variable="ano"/>
+            <assign variable="idade" expression="2021 - ano"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <output expression="&quot;Venda de bebidas liberadas&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Vendas de bebidas proibidas&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

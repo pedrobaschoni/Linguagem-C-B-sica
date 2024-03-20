@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-01 12:30:00 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTAxOyIxMjowNzoxNSAiOzI0MDY="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTAxOyIxMjozMDowMCAiOzE7MjUwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, avaliativa, provainicial, provafinal" type="Real" array="False" size=""/>
+            <input variable="avaliativa"/>
+            <input variable="provainicial"/>
+            <input variable="provafinal"/>
+            <assign variable="media" expression="avaliativa + provainicial + provafinal"/>
+            <output expression="&quot;A media &#233;: &quot;&amp;media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

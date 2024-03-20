@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 10:22:19 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIxMDoyMjoxOSAiOzI7MjUxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia, mes, totald, totalm, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;Em qual dia voc&#234; est&#225;?&quot;" newline="True"/>
+            <input variable="dia"/>
+            <output expression="&quot;Em qual m&#234;s voc&#234; est&#225;?&quot;" newline="True"/>
+            <input variable="mes"/>
+            <assign variable="totald" expression="30 - dia"/>
+            <assign variable="totalm" expression="mes * 30"/>
+            <assign variable="total" expression="totalm - totald"/>
+            <output expression="&quot;O tanto de dias que j&#225; se passaram &#233; de: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 01:01:14 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwMTowMToxNCAiOzg7MjUxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gp, gm, gg, tp, tm, tg, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Quantas guarrafas de 350ml deseja?&quot;" newline="True"/>
+            <input variable="gp"/>
+            <output expression="&quot;Quantas guarrafas de 600ml deseja?&quot;" newline="True"/>
+            <input variable="gm"/>
+            <output expression="&quot;Quantas guarrafas de 2L deseja?&quot;" newline="True"/>
+            <input variable="gg"/>
+            <assign variable="tp" expression="gp * 0.350"/>
+            <assign variable="tm" expression="gm * 0.600"/>
+            <assign variable="tg" expression="gg * 2"/>
+            <assign variable="total" expression="tp + tm + tg"/>
+            <output expression="&quot;Total de Litros comprados: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

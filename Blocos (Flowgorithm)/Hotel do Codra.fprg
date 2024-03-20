@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-06 01:15:48 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwOTo1MjowOSAiOzI0MjA="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTA2OyIwMToxNTo0OCAiOzk7MjUzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="diaria, dias, gasto, por, totalt, totalp, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Quanto custa a diaria do hotel?&quot;" newline="True"/>
+            <input variable="diaria"/>
+            <output expression="&quot;Quantos dias o cliente se hospedou?&quot;" newline="True"/>
+            <input variable="dias"/>
+            <output expression="&quot;Quanto foi o gasto com bebidas e comidas do cliente?&quot;" newline="True"/>
+            <input variable="gasto"/>
+            <output expression="&quot;Qual a porcentagem de desconto dada?&quot;" newline="True"/>
+            <input variable="por"/>
+            <assign variable="totalt" expression="(diaria * dias) + gasto"/>
+            <assign variable="totalp" expression="totalt * (por / 100)"/>
+            <assign variable="total" expression="totalt - totalp"/>
+            <output expression="&quot;O total a ser pago: &quot; &amp;totalt" newline="True"/>
+            <output expression="&quot;Desconto: &quot; &amp;totalp" newline="True"/>
+            <output expression="&quot;Valor final com o desconto: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

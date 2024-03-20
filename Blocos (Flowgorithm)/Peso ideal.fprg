@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="W10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-20 08:21:32 "/>
+        <attribute name="created" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwODoxMzozMSAiOzI0MDc="/>
+        <attribute name="edited" value="VzEwO0RFU0tUT1AtTEoyNUVBRzsyMDIxLTA0LTIwOyIwODoyMTozMiAiOzE7MjUxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="alt, sexo, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe 1 para Masculino e 2 para Feminino&quot;" newline="True"/>
+            <output expression="&quot;Informe o seu sexo: &quot;" newline="True"/>
+            <input variable="sexo"/>
+            <output expression="&quot;Informe sua altura: &quot;" newline="True"/>
+            <input variable="alt"/>
+            <if expression="sexo = 1">
+                <then>
+                    <assign variable="total" expression="(72.7 * alt) - 58"/>
+                    <output expression="&quot;Seu peso ideal &#233;: &quot; &amp;total" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="total" expression="(62.1 * alt) - 44.7"/>
+                    <output expression="&quot;Seu peso ideal &#233;: &quot; &amp;total" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
